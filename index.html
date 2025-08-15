@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies & Pastry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍪 Cookies & Pastry</h1>
+        <nav>
+            <a href="#produk">Produk</a>
+            <a href="#kontak">Kontak</a>
+            <a href="#testimoni">Testimoni</a>
+        </nav>
+    </header>
+
+    <!-- Slider Produk Terlaris -->
+    <section id="produk" class="slider-container">
+        <h2>Produk Terlaris</h2>
+        <div class="slider" id="slider">
+            <div class="slide"><img src="images/cookie1.svg" alt="Cookie 1"><p>Choco Chip</p><p class="harga">Rp15.000</p><button onclick="addToCart('Choco Chip')">Tambah ke Keranjang</button></div>
+            <div class="slide"><img src="images/cookie2.svg" alt="Cookie 2"><p>Strawberry</p><p class="harga">Rp17.000</p><button onclick="addToCart('Strawberry')">Tambah ke Keranjang</button></div>
+            <div class="slide"><img src="images/cookie3.svg" alt="Cookie 3"><p>Matcha</p><p class="harga">Rp18.000</p><button onclick="addToCart('Matcha')">Tambah ke Keranjang</button></div>
+            <div class="slide"><img src="images/cookie4.svg" alt="Cookie 4"><p>Vanilla Cream</p><p class="harga">Rp16.000</p><button onclick="addToCart('Vanilla Cream')">Tambah ke Keranjang</button></div>
+            <div class="slide"><img src="images/cookie5.svg" alt="Cookie 5"><p>Blueberry</p><p class="harga">Rp19.000</p><button onclick="addToCart('Blueberry')">Tambah ke Keranjang</button></div>
+        </div>
+        <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Kritik & Saran -->
+    <section id="kritik">
+        <h2>Kritik & Saran</h2>
+        <form id="kritikForm">
+            <textarea placeholder="Tulis kritik atau saran Anda..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni">
+        <h2>Testimoni</h2>
+        <form id="testimoniForm">
+            <input type="text" placeholder="Nama Anda" required>
+            <textarea placeholder="Tulis testimoni..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="testimoniList"></div>
+    </section>
+
+    <!-- Kontak -->
+    <footer id="kontak">
+        <p>📍 Alamat: Jl. Melati Yoogii</p>
+        <p>📸 Instagram: @cokies&pastry</p>
+        <p>🎵 TikTok: @ttcokiesandpastry</p>
+        <p>📧 Email: cokies.pastry@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
